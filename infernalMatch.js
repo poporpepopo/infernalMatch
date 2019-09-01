@@ -1,4 +1,4 @@
-const weapons = [	"スプラシューター",
+const WEAPONS = [	"スプラシューター",
                     "スプラシューターコラボ",
                     "ヒーローシューター レプリカ",
                     "オクタシューター レプリカ",
@@ -138,7 +138,7 @@ const weapons = [	"スプラシューター",
                     "スパイガジェットソレーラ",
                     "スパイガジェットベッチュー"];
 
-const headGears = [	"インク効率アップ(メイン)",
+const HEAD_GEARS = ["インク効率アップ(メイン)",
                     "インク効率アップ(サブ)",
                     "インク回復力アップ",
                     "ヒト移動速度アップ",
@@ -157,7 +157,7 @@ const headGears = [	"インク効率アップ(メイン)",
                     "逆境強化",
                     "カムバック"];
 
-const bodyGears = [	"インク効率アップ(メイン)",
+const BODY_GEARS = ["インク効率アップ(メイン)",
                     "インク効率アップ(サブ)",
                     "インク回復力アップ",
                     "ヒト移動速度アップ",
@@ -177,7 +177,7 @@ const bodyGears = [	"インク効率アップ(メイン)",
                     "復活ペナルティアップ",
                     "追加ギアパワー倍化 "];
 
-const footGears = [	"インク効率アップ(メイン)",
+const FOOT_GEARS = ["インク効率アップ(メイン)",
                     "インク効率アップ(サブ)",
                     "インク回復力アップ",
                     "ヒト移動速度アップ",
@@ -198,10 +198,10 @@ const footGears = [	"インク効率アップ(メイン)",
 
 $(function () {
     $("#roulette").on("click", function () {
-        $("#weapon").text(decideEquipment(weapons));
-        $("#headGear").text(decideEquipment(headGears));
-        $("#bodyGear").text(decideEquipment(bodyGears));
-        $("#footGear").text(decideEquipment(footGears));
+        $("#weapon").text(decideEquipment(WEAPONS));
+        $("#headGear").text(decideEquipment(HEAD_GEARS));
+        $("#bodyGear").text(decideEquipment(BODY_GEARS));
+        $("#footGear").text(decideEquipment(FOOT_GEARS));
     });
 });
 
